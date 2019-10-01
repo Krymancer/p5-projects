@@ -1,9 +1,3 @@
-// Fourier Series
-// Daniel Shiffman
-// https://thecodingtrain.com/CodingChallenges/125-fourier-series.html
-// https://youtu.be/Mm2eYfj0SgA
-// https://editor.p5js.org/codingtrain/sketches/SJ02W1OgV
-
 let time = 0;
 let wave = [];
 let c = ["#FF0000", 
@@ -16,9 +10,15 @@ let c = ["#FF0000",
 let slider;
 
 function setup() {
-  createCanvas(window.innerWidth-10,window.innerHeight - 50);
-  //slider = createSlider(1, 20, 5);
+  createCanvas(window.innerWidth,window.innerHeight);
+  div = createDiv('Circles:');
   text = createInput('5');
+  div.position(10,height-40)
+  text.position(70,height-40);
+}
+
+function parseInput(){
+  return (text.value()!="" && text.value() >  0) ? text.value() : 1;
 }
 
 function draw() {
@@ -28,7 +28,7 @@ function draw() {
   let x = 0;
   let y = 0;
 
-  for (let i = 0; i < text.value(); i++) {
+  for (let i = 0; i < parseInput(); i++) {
     let prevx = x;
     let prevy = y;
 
@@ -50,7 +50,6 @@ function draw() {
     //ellipse(x, y, 8);
   }
   wave.unshift(y);
-
 
   translate(400, 0);
   strokeWeight(1.8);
