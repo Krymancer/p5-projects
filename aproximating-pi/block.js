@@ -25,8 +25,7 @@ class Block{
     }
 
     show(){
-        stroke(120);
-        fill(255/this.m,255/this.y,60);
+        fill(255/this.m,255/this.y,200);
         square(this.x,this.y,this.w);
     }
 

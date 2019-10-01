@@ -16,7 +16,7 @@ function preload() {
 
 
 function setup() {
-  createCanvas(window.innerWidth-10,window.innerHeight - 20);
+  createCanvas(window.innerWidth,window.innerHeight);
   colorMode(HSB, 1, 1, 1);
   background(0.1);
 
@@ -47,6 +47,7 @@ function draw() {
   endShape();
 
   if(time > TWO_PI){
+    noLoop();
     time = 0;
     path = [];
   }

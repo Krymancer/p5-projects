@@ -1,5 +1,5 @@
 const TARGET_PHRASE = `To be or no to be!`;
-const POPULATION_SIZE = 50;
+const POPULATION_SIZE = 100;
 const MUTATION_RATE = 0.01;
 
 let population;
@@ -200,6 +200,6 @@ function showGUI() {
   
   // Output Data
   for (let i = 0; i < 15; i++) {
-    text(population[i].phrase, width / 10, height / 2 - 170 + (i * 20));
+    text(population[i].phrase, width / 10, height / 2 - 150 + (i * 20));
   }
 }

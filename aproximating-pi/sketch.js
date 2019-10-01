@@ -1,7 +1,7 @@
 let collisions = 0;
 let div;
-let digits = 8;
-let dt = 1000000;
+let digits = 7;
+let dt = 1e6;
 
 function setup() {
   createCanvas(windowWidth, 400);
@@ -13,7 +13,8 @@ function setup() {
 
 
 function draw() {
-  background(42,42,42);
+  background(72,72,72);
+  noStroke();
 
   for(let i=0;i<dt;i++){
     if(block1.collide(block2)){
@@ -37,5 +38,5 @@ function draw() {
   block1.show();
   block2.show();
 
-  div.html(nf(collisions,digits));
+  div.html('<br> Digits: ' + digits + '<br>Collsions: ' + nf(collisions,digits));
 }

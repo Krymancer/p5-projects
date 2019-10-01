@@ -3,7 +3,7 @@ let arr = [];
 let t=0;
 
 function setup() {
-  createCanvas(window.innerWidth-20,window.innerHeight - 25);
+  createCanvas(window.innerWidth,window.innerHeight);
   //colorMode(HSB, 1, 1, 1);
   background(32,32,32);
   //createCanvas(800,600);

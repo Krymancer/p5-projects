@@ -1,0 +1,39 @@
+  body {
+      font-family: ariel, monospace, sans-serif;
+      background: #212121;
+      color: white;
+  }
+
+  p {
+      font-weight: normal;
+      font-family: ariel, monospace, sans-serif;
+      color: white;
+      background-color: transparent;
+  }
+
+  b {
+      font-weight: normal;
+      color: white;
+      background-color: transparent;
+  }
+
+
+  a {
+      font-weight: normal;
+      text-decoration: none;
+      background-color: transparent;
+      margin: 0px 0px 0px 0px;
+      padding: 0px 0px 0px 0px;
+      display: inline;
+      color: white;
+  }
+
+  a:hover {
+      color: white;
+      font-weight: normal;
+      text-decoration: underline;
+      background-color: #3d3d3d;
+      margin: 0px 0px 0px 0px;
+      padding: 0px 0px 0px 0px;
+      display: inline;
+  }
